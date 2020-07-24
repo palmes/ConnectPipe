@@ -19,7 +19,8 @@ public class PlacementArrow : MonoBehaviour
     // add a new instance of that prefab thingy at current position
     private void OnMouseDown()
     {
-        Debug.Log("At position " + x_pos + y_pos);
-        GameObject.Find("GameManager").GetComponent<GameManager>().AddTile(x_pos, y_pos);
+        float pos_x = gameObject.transform.position.x;
+        float pos_y = gameObject.transform.position.y;
+        GameObject.Find("GameManager").GetComponent<GameManager>().AddTile(pos_x, pos_y);
     }
 }
