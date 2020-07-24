@@ -148,7 +148,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 55342528}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ed7a0b455b9c1f045a7d2e6519baef96, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -605,6 +605,9 @@ MonoBehaviour:
     type: 3}
   tilePrefab12: {fileID: 5407314556134504979, guid: f0d48ef691d5d994b9239685538e22fb,
     type: 3}
+  gridSize: 4
+  leftExit: 0
+  rightExit: 0
 --- !u!4 &1394807375
 Transform:
   m_ObjectHideFlags: 0
