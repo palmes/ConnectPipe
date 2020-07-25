@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlacementArrow : MonoBehaviour
 {
+    public int columnNumber;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,6 @@ public class PlacementArrow : MonoBehaviour
     {
         float pos_x = gameObject.transform.position.x;
         float pos_y = gameObject.transform.position.y;
-        GameObject.Find("GameManager").GetComponent<GameManager>().AddTile(pos_x, pos_y);
+        GameObject.Find("GameManager").GetComponent<GameManager>().AddTileToColumn(columnNumber);
     }
 }
